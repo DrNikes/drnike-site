@@ -1,0 +1,106 @@
+/* DrNike - simple clean theme */
+
+:root{
+  --bg:#f7f7f7;
+  --card:#ffffff;
+  --text:#1e1e1e;
+  --muted:#555;
+  --line:#e8e8e8;
+  --link:#3b5bdb;
+}
+
+*{ box-sizing:border-box; }
+
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+main{
+  max-width: 920px;
+  margin: 0 auto;
+  background: var(--card);
+  padding: 44px 34px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+nav{
+  font-size: 15px;
+  margin-bottom: 22px;
+}
+
+nav a{
+  color: var(--link);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+nav a:hover{
+  background: rgba(59,91,219,0.10);
+}
+
+h1{
+  font-size: 52px;
+  margin: 10px 0 8px;
+  letter-spacing: -0.5px;
+}
+
+.tagline{
+  color: var(--muted);
+  font-size: 18px;
+  margin: 0 0 22px;
+}
+
+h2{
+  margin: 26px 0 8px;
+  font-size: 22px;
+}
+
+p{
+  margin: 0 auto;
+  max-width: 62ch;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+hr{
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 18px auto;
+  max-width: 520px;
+}
+
+.footer{
+  margin-top: 26px;
+  font-size: 13px;
+  color: #777;
+}
+
+@media (max-width: 520px){
+  main{ padding: 28px 18px; }
+  h1{ font-size: 40px; }
+}
+nav {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2563eb; /* calm blue */
+  margin: 0 6px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
